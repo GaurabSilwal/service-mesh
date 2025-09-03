@@ -1,0 +1,35 @@
+service-mesh-project/
+│
+├── microservices/
+│   ├── user-service/
+│   │   ├── app.py
+│   │   ├── Dockerfile
+│   │   └── requirements.txt
+│   ├── order-service/
+│   │   ├── app.py
+│   │   ├── Dockerfile
+│   │   └── requirements.txt
+│   └── payment-service/
+│       ├── app.py
+│       ├── Dockerfile
+│       └── requirements.txt
+│
+├── k8s/
+│   ├── namespaces.yaml
+│   ├── deployments/
+│   │   ├── user-deployment.yaml
+│   │   ├── order-deployment.yaml
+│   │   └── payment-deployment.yaml
+│   ├── services/
+│   │   ├── user-service.yaml
+│   │   ├── order-service.yaml
+│   │   └── payment-service.yaml
+│   └── traffic-routing/
+│       ├── canary.yaml
+│       └── blue-green.yaml
+│
+├── istio/
+│   └── enable-mtls.yaml
+│
+└── ci-cd/
+    └── github-actions.yml
